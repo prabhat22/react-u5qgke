@@ -50,9 +50,17 @@ export default function ReducerExample() {
 
   function showMenu() {
     console.log("menu loaded");
-
+    window.document.body.style.overflowY = "hidden";
+    mobileSideNav.current.classList.remove("close-menu");
+    mobileSideNav.current.classList.add("open-menu");
     menu.open();
+
     // Attach the event listener to the *DOM element*, not the SlideMenu instance
+  }
+  function closeMenu() {
+    mobileSideNav.current.classList.remove("open-menu");
+    mobileSideNav.current.classList.add("close-menu");
+    window.document.body.style.overflowY = "scroll";
   }
 
   function headerMouseOver() {
@@ -393,7 +401,7 @@ export default function ReducerExample() {
           <button
             type="button"
             className="btn slide-menu__control"
-            data-action="close"
+            onClick={closeMenu}
           >
             Close
           </button>

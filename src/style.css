@@ -53,11 +53,11 @@ h2 {
 .sidenav {
   height: 100%;
   width: 400px;
-  top: 60px;
+  top: 65px;
   position: fixed;
   z-index: 100;
   left: -600px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border-right: 5px solid #09f172;
   overflow-x: hidden;
   padding-top: 20px;
@@ -95,11 +95,11 @@ h2 {
 .sidenav2 {
   height: 100%;
   width: 400px;
-  top: 60px;
+  top: 65px;
   position: absolute;
   z-index: 100;
   left: -12200px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   overflow-x: hidden;
   padding-top: 20px;
   -webkit-animation: slide2 0.7s forwards;
@@ -186,7 +186,6 @@ h2 {
 .slide-menu {
   background-color: #f2f2f2 !important;
   top: 60px !important;
-  /* left:-340px !important; */
 }
 
 .slide-menu a {
@@ -207,4 +206,11 @@ h2 {
 }
 .close {
   right: -1000px !important;
+}
+.open-menu {
+  transform: translateX(100%) !important;
+  left: -340px !important;
+}
+.close-menu {
+  transform: translateX(0%) !important;
 }
