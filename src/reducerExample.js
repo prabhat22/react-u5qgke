@@ -9,6 +9,7 @@ import "./slide-menu.js";
 import "./demo.css";
 import "./slide-menu.css";
 import "./style.css";
+
 import ReactDOM from "react-dom";
 import $ from "jquery";
 
@@ -26,6 +27,7 @@ export default function ReducerExample() {
   var about_services_sub_links = useRef("");
   var currentLink;
   var currentSubLink;
+
   // var [currentLink, setCurrentLink] = useState();
   console.log(sidebar, sidebar2, more_sub_links, about_sub_links);
 
@@ -201,7 +203,7 @@ export default function ReducerExample() {
           <div className="bar3" />
         </div>
 
-        <nav id="nav" className="nav col-sm-5 ">
+        <nav id="nav" className="nav col-sm-4 ">
           <a
             className="nav-link"
             href="#"
@@ -235,8 +237,10 @@ export default function ReducerExample() {
             More
           </a>
         </nav>
-        <div className="col-sm-3">
-          <a className="navbar-brand" href="#"></a>
+        <div className="offset-sm-1  col-sm-3 ">
+          <a className="navbar-brand" href="#">
+            <img src="https://www.growdiesel.com/img/logo/logo2.png" />
+          </a>
         </div>
         <div id="headerBtn" className="col-sm-4">
           <button className="btn btnSubscribe">SUBSCRIBE</button>
