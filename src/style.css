@@ -1,3 +1,6 @@
+#menuBtn {
+  margin-top: 10px;
+}
 .bar1,
 .bar2,
 .bar3 {
@@ -8,19 +11,6 @@
   transition: 0.4s;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
 h1,
 h2 {
   font-family: Lato;
@@ -33,6 +23,7 @@ h2 {
   position: fixed;
   border: none;
   border-bottom: 7px solid #09f172;
+  padding-left: 10px;
 }
 .scrollHeader {
   background-color: white;
@@ -41,7 +32,7 @@ h2 {
 #header a {
   padding: 10px;
   color: black;
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -185,7 +176,7 @@ h2 {
 
 .slide-menu {
   background-color: #f2f2f2 !important;
-  top: 60px !important;
+  top: 70px !important;
 }
 
 .slide-menu a {
@@ -208,9 +199,10 @@ h2 {
   right: -1000px !important;
 }
 .open-menu {
-  transform: translateX(100%) !important;
-  left: -340px !important;
+  /* transform: translateX(100%) !important;
+  transition: 1s !important;
+  left: -340px !important; */
 }
-.close-menu {
+/* .close-menu {
   transform: translateX(0%) !important;
-}
+} */

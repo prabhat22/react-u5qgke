@@ -34,6 +34,7 @@ export default function ReducerExample() {
     console.log(menuElement);
     menu = new SlideMenu(menuElement, {
       keyClose: "Escape",
+      position: "left",
       submenuLinkAfter:
         '<span style="margin-left: 1em; font-size: 85%;">⮞</span>',
       backLinkBefore:
@@ -103,6 +104,13 @@ export default function ReducerExample() {
       sidebar2.current.hidden = true;
     }
     //sidebar.current.style.left = 0 + "px";
+  }
+  function handleMouseLeave() {
+    if (sidebar.current.hidden) {
+      if (currentLink != undefined) {
+        currentLink.classList.remove("active");
+      }
+    }
   }
   function handleSidebarMouseLeave() {
     if (sidebar2.current.hidden == true) {
@@ -194,21 +202,41 @@ export default function ReducerExample() {
         </div>
 
         <nav id="nav" className="nav col-sm-5 ">
-          <a className="nav-link" href="#" onMouseOver={handleMouseOver}>
+          <a
+            className="nav-link"
+            href="#"
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
             About Us
           </a>
-          <a className="nav-link" href="#" onMouseOver={handleMouseOver}>
+          <a
+            className="nav-link"
+            href="#"
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
             Masterclass
           </a>
-          <a className="nav-link" href="#" onMouseOver={handleMouseOver}>
+          <a
+            className="nav-link"
+            href="#"
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
             Eco Store
           </a>
-          <a className="nav-link " href="#" onMouseOver={handleMouseOver}>
+          <a
+            className="nav-link "
+            href="#"
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
             More
           </a>
         </nav>
         <div className="col-sm-3">
-          <a className="navbar-brand" href="#" />
+          <a className="navbar-brand" href="#"></a>
         </div>
         <div id="headerBtn" className="col-sm-4">
           <button className="btn btnSubscribe">SUBSCRIBE</button>
@@ -401,7 +429,7 @@ export default function ReducerExample() {
           <button
             type="button"
             className="btn slide-menu__control"
-            onClick={closeMenu}
+            data-action="close"
           >
             Close
           </button>
