@@ -140,10 +140,16 @@ h2 {
 }
 .sidenav2 #more_media a {
   background-color: rgba(0, 0, 0, 0.6);
-  height: 60px;
+  height: 90px;
   text-align: center;
   text-transform: uppercase;
   color: #09f172;
+  position: relative;
+}
+#more_media span {
+  left: 42%;
+  position: absolute;
+  top: 25%;
 }
 .arrow {
   border: solid black;
@@ -198,14 +204,10 @@ h2 {
 .slide-menu .btn:hover {
   background-color: #09f172 !important;
 }
-.close {
-  right: -1000px !important;
+#mobile_media_sublinks a {
+  height: 90px;
+  /* text-align: center; */
+  text-transform: uppercase;
+  color: #09f172;
+  position: relative;
 }
-.open-menu {
-  /* transform: translateX(100%) !important;
-  transition: 1s !important;
-  left: -340px !important; */
-}
-/* .close-menu {
-  transform: translateX(0%) !important;
-} */

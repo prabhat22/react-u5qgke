@@ -194,7 +194,7 @@ export default function ReducerExample() {
       >
         <div
           style={{ cursor: "pointer" }}
-          className="d-lg-none col-sm-2"
+          className="d-lg-none "
           id="menuBtn"
           onClick={showMenu}
         >
@@ -203,7 +203,7 @@ export default function ReducerExample() {
           <div className="bar3" />
         </div>
 
-        <nav id="nav" className="nav col-sm-4 ">
+        <nav id="nav" className="nav  ">
           <a
             className="nav-link"
             href="#"
@@ -237,7 +237,7 @@ export default function ReducerExample() {
             More
           </a>
         </nav>
-        <div className="offset-sm-1  col-sm-3 ">
+        <div className="offset-sm-2  col-sm-3 ">
           <a className="navbar-brand" href="#">
             <img src="https://www.growdiesel.com/img/logo/logo2.png" />
           </a>
@@ -392,10 +392,37 @@ export default function ReducerExample() {
       >
         <div className="sidenav2">
           <div id="more_media" ref={more_media_sub_links} hidden>
-            <a href="#services">Websites</a>
+            <a
+              href="#services"
+              style={{
+                backgroundImage: `url(
+                  "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
+                )`
+              }}
+            >
+              <span>Photos</span>
+            </a>
 
-            <a href="#services">Websites</a>
-            <a href="#services">See Overview</a>
+            <a
+              href="#services"
+              style={{
+                backgroundImage: `url(
+                  "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
+                )`
+              }}
+            >
+              <span>Photos</span>
+            </a>
+            <a
+              href="#services"
+              style={{
+                backgroundImage: `url(
+                  "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
+                )`
+              }}
+            >
+              <span>Photos</span>
+            </a>
           </div>
           <div id="link1" ref={more_event_sub_links} hidden>
             <a href="#services">Online Events</a>
@@ -508,6 +535,46 @@ export default function ReducerExample() {
             <ul>
               <li>
                 <a href="#">Media</a>
+                <ul id="mobile_media_sublinks">
+                  <li>
+                    <a
+                      style={{
+                        backgroundImage: `url(
+                  "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
+                )`
+                      }}
+                    >
+                      <span
+                        style={{
+                          position: "absolute",
+                          left: "40%",
+                          top: "25%"
+                        }}
+                      >
+                        Photos
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      style={{
+                        backgroundImage: `url(
+                  "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
+                )`
+                      }}
+                    >
+                      <span
+                        style={{
+                          position: "absolute",
+                          left: "40%",
+                          top: "25%"
+                        }}
+                      >
+                        Photos
+                      </span>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="#">Invite us at your event</a>
