@@ -5,13 +5,11 @@ import React, {
   useReducer,
   componentDidMount
 } from "react";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import "./slide-menu.js";
 import "./demo.css";
 import "./slide-menu.css";
 import "./style.css";
-
-import ReactDOM from "react-dom";
-import $ from "jquery";
 
 export default function ReducerExample() {
   var menu;
@@ -184,7 +182,7 @@ export default function ReducerExample() {
   }
 
   return (
-    <div className="container-fluid" style={{ height: "1200px" }}>
+    <Router>
       <header
         id="header"
         className="header row"
@@ -392,8 +390,7 @@ export default function ReducerExample() {
       >
         <div className="sidenav2">
           <div id="more_media" ref={more_media_sub_links} hidden>
-            <a
-              href="#services"
+            <Link
               style={{
                 backgroundImage: `url(
                   "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
@@ -401,10 +398,9 @@ export default function ReducerExample() {
               }}
             >
               <span>Photos</span>
-            </a>
+            </Link>
 
-            <a
-              href="#services"
+            <Link
               style={{
                 backgroundImage: `url(
                   "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
@@ -412,9 +408,8 @@ export default function ReducerExample() {
               }}
             >
               <span>Photos</span>
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
               style={{
                 backgroundImage: `url(
                   "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
@@ -422,7 +417,7 @@ export default function ReducerExample() {
               }}
             >
               <span>Photos</span>
-            </a>
+            </Link>
           </div>
           <div id="link1" ref={more_event_sub_links} hidden>
             <a href="#services">Online Events</a>
@@ -617,6 +612,6 @@ export default function ReducerExample() {
           </li>
         </ul>
       </nav>
-    </div>
+    </Router>
   );
 }

@@ -66,7 +66,8 @@ h2 {
   color: black;
   padding: 6px 8px 6px 16px;
 }
-.sidenav a {
+.sidenav a,
+link {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -76,7 +77,8 @@ h2 {
   border-bottom: 3px solid #09f172;
 }
 
-.sidenav a:hover {
+.sidenav a:hover,
+link:hover {
   background-color: #09f172;
   color: black;
   text-decoration: none;
@@ -108,7 +110,8 @@ h2 {
   padding: 15px;
   text-align: right;
 } */
-.sidenav2 a {
+.sidenav2 a,
+link {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -117,7 +120,8 @@ h2 {
   border-bottom: 3px solid #09f172;
 }
 
-.sidenav2 a:hover {
+.sidenav2 a:hover,
+link:hover {
   background-color: #09f172;
   color: black;
   text-decoration: none;
@@ -138,7 +142,8 @@ h2 {
     display: none;
   }
 }
-.sidenav2 #more_media a {
+.sidenav2 #more_media a,
+link {
   background-color: rgba(0, 0, 0, 0.6);
   height: 90px;
   text-align: center;
@@ -188,12 +193,14 @@ h2 {
   /* top: 70px !important; */
 }
 
-.slide-menu a {
+.slide-menu a,
+link {
   color: black !important;
   border-bottom: 3px solid #09f172 !important;
   font-size: 20px !important;
 }
-.slide-menu a:hover {
+.slide-menu a:hover,
+link:hover {
   background-color: #09f172 !important;
   text-decoration: none !important;
 }
@@ -204,7 +211,7 @@ h2 {
 .slide-menu .btn:hover {
   background-color: #09f172 !important;
 }
-.mobile_media_sublinks  {
+.mobile_media_sublinks {
   height: 90px;
   /* text-align: center; */
   text-transform: uppercase;
