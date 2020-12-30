@@ -538,6 +538,7 @@ export default function ReducerExample() {
                 <ul id="mobile_media_sublinks">
                   <li>
                     <a
+                      className="mobile_media_sublinks"
                       style={{
                         backgroundImage: `url(
                   "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
@@ -557,6 +558,7 @@ export default function ReducerExample() {
                   </li>
                   <li>
                     <a
+                      className="mobile_media_sublinks"
                       style={{
                         backgroundImage: `url(
                   "https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png"
@@ -607,6 +609,9 @@ export default function ReducerExample() {
               </li>
               <li>
                 <a href="#">Join our Whatsapp group for Free</a>
+              </li>
+              <li>
+                <a>Support us on social media </a>
               </li>
             </ul>
           </li>

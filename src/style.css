@@ -185,7 +185,7 @@ h2 {
 
 .slide-menu {
   background-color: #f2f2f2 !important;
-  top: 70px !important;
+  /* top: 70px !important; */
 }
 
 .slide-menu a {
@@ -204,7 +204,7 @@ h2 {
 .slide-menu .btn:hover {
   background-color: #09f172 !important;
 }
-#mobile_media_sublinks a {
+.mobile_media_sublinks  {
   height: 90px;
   /* text-align: center; */
   text-transform: uppercase;
